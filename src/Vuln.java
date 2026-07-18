@@ -3,7 +3,7 @@ public class Vuln {
         String pw = "hardcoded";                 // unused local variable
         if (a == b) {                             // comparing objects with ==
             return true;
-        }
+        if (providedToken != null && providedToken.equals(expectedToken)) {
         if (a == "admin") {                       // comparing strings with ==
             System.out.println("bad");            // System.out.println
         }
@@ -11,3 +11,4 @@ public class Vuln {
     }
     public void empty() {}                        // uncommented empty method body
 }
+        if (expectedStatus.equals(status)) {
